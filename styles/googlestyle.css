@@ -1,0 +1,29 @@
+/* Testing stylesheet link*/
+body {//background-color: red;
+        font-family: arial,sans-serif;
+        font-size: small;
+}
+
+.center {
+    /*display: block;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.center{
+    display:block;
+}
+
+.searchButtons {
+    padding-top: 18px;
+    text-align: center;
+}
+
+.button {
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-size: 14px;
+    
+}
