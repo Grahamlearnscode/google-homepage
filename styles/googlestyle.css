@@ -1,5 +1,4 @@
-/* Testing stylesheet link*/
-body {//background-color: red;
+body {
         font-family: arial,sans-serif;
         font-size: small;
 }
@@ -10,38 +9,39 @@ body {//background-color: red;
     margin-right: auto;
 }
 
+/***Google logo*/
 img.center{
     display:block;
 }
 
-input {
-    width: 40%;
-    padding: 10px 30px;
-    border: 1px solid lightgray;
-    border-radius: 20px;
-
-}
 
 .search {
        text-align: center;
        width: 200px;
        /* border: 1px solid red; */
-}
+       }
 
 
-#searchWhole {
-    /*border: 1px solid black;*/
-    width: 100%;
-    margin-top: 30px;
-}
-
-/*The div*/
+/***The div*/
 #searchWhole2 {
-    border: 1px solid black;
-    color: red;
     width: 500px;
     text-align: center;
-    }
+    width: 40%;
+    padding: 10px 30px;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    margin: 30px auto 0;
+    /* Longhand:
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;*/
+}
+
+#searchWhole2 img {
+    /* How to position the magnifying glass inside the search div. This doesn't do it. Revisit once the text input is the right size.
+    position: relative;
+    left: 0px;*/
+}
 
 /*The form*/
 .search2 {
@@ -51,8 +51,12 @@ input {
 }
 
 .search2 input {
-    border: 1px dotted blue;
-    
+    border: none;
+}
+
+/*Override browser default input highlighting*/ 
+.search2 input:focus {
+    outline: none;
 }
 
 
