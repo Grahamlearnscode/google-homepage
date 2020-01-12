@@ -14,16 +14,66 @@ img.center{
     display:block;
 }
 
-.searchButtons {
-    padding-top: 18px;
-    text-align: center;
+input {
+    width: 40%;
+    padding: 10px 30px;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+
 }
 
+.search {
+       text-align: center;
+       width: 200px;
+       /* border: 1px solid red; */
+}
+
+
+#searchWhole {
+    /*border: 1px solid black;*/
+    width: 100%;
+    margin-top: 30px;
+}
+
+/*The div*/
+#searchWhole2 {
+    border: 1px solid black;
+    color: red;
+    width: 500px;
+    text-align: center;
+    }
+
+/*The form*/
+.search2 {
+    display: inline;
+    /*text-align: center;*/ 
+    /*Moves the input box to the middle of the div. But only when it's on a new line, which it won't be. Setting text-align:center on the div itself centers the input box and other elements like the magnify icon, which is workable.*/
+}
+
+.search2 input {
+    border: 1px dotted blue;
+    
+}
+
+
+/*
+----
+*/
+
+
+/*Google Search and I'm Feeling Lucky buttons*/
 .button {
     background-color: #f2f2f2;
     border: 1px solid #f2f2f2;
     border-radius: 4px;
     color: #5F6368;
     font-size: 14px;
-    
+    margin: 11px 4px;
+    padding: 0 16px;
+    height: 36px;
+}
+
+#searchButtons {
+    padding-top: 18px;
+    text-align: center;
 }
