@@ -25,9 +25,9 @@ img.center{
 /***The div*/
 #searchWhole2 {
     width: 500px;
-    text-align: center;
-    width: 40%;
-    padding: 10px 30px;
+    /*text-align: center;*/
+    width: 50%;
+    padding: 10px 10px;
     border: 1px solid lightgray;
     border-radius: 20px;
     margin: 30px auto 0;
@@ -37,10 +37,28 @@ img.center{
     margin-right: auto;*/
 }
 
-#searchWhole2 img {
-    /* How to position the magnifying glass inside the search div. This doesn't do it. Revisit once the text input is the right size.
-    position: relative;
-    left: 0px;*/
+/*Styling box shadow to make obvious when search box is active*/
+#searchWhole2:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+}
+
+#searchWhole2:focus-within {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+}
+
+#mag {
+    padding-left: 5px;
+    padding-right: 10px;
+    margin-bottom: -2px;
+}
+
+#mic {
+    /*///Need something to shunt the postion of the Mic image down slightly. Padding-top doesn't do it, it still sits on the line*/ 
+    margin-bottom: -4px;  
+}
+
+#mic:hover {
+    cursor: pointer;
 }
 
 /*The form*/
@@ -52,7 +70,11 @@ img.center{
 
 .search2 input {
     border: none;
+    font-size: 16px;
+    /*width: 320px;*/
+    width: 85%;
 }
+
 
 /*Override browser default input highlighting*/ 
 .search2 input:focus {
@@ -66,7 +88,7 @@ img.center{
 
 
 /*Google Search and I'm Feeling Lucky buttons*/
-.button {
+button {
     background-color: #f2f2f2;
     border: 1px solid #f2f2f2;
     border-radius: 4px;
@@ -81,3 +103,11 @@ img.center{
     padding-top: 18px;
     text-align: center;
 }
+
+#searchButtons button:hover {
+border: 1px solid #bbb;
+box-shadow: 0 0.5px 1px 0 rgba(32,33,36,0.28);
+cursor: pointer;
+}
+
+
