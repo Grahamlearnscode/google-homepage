@@ -9,11 +9,47 @@ body {
     margin-right: auto;
 }
 
+a {
+    color: #000;
+    opacity: 0.75;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/***Top bar*/
+#topOuter1 {
+    border: 0px solid blue;
+    width: 100%;
+  }
+  
+  #topInner1 {
+    border: 0px solid red;
+    position: absolute;
+  }
+  
+  #topOuter2 {
+    border: 0px solid green;
+  width: 100%;
+  }
+  
+  #topInner2 {
+    border: 0px solid pink;
+    position: relative;
+    text-align: right;
+  }
+  
+
+
 /***Google logo*/
 img.center{
     display:block;
 }
 
+
+/***Search box*/
 
 .search {
        text-align: center;
@@ -53,7 +89,7 @@ img.center{
 }
 
 #mic {
-    /*///Need something to shunt the postion of the Mic image down slightly. Padding-top doesn't do it, it still sits on the line*/ 
+    /*///Shunt the postion of the Mic image down slightly. Padding-top doesn't do it, it still sits on the line*/ 
     margin-bottom: -4px;  
 }
 
