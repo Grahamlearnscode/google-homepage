@@ -1,6 +1,9 @@
+/*63 Opacity inheritence*/
+
 body {
         font-family: arial,sans-serif;
         font-size: small;
+    margin: 0;
 }
 
 .center {
@@ -20,32 +23,66 @@ a:hover {
 }
 
 /***Top bar*/
-#topOuter1 {
-    border: 0px solid blue;
-    width: 100%;
-  }
+/*** ******This is broken, trying to do it the google way with different 0-height divs one left one right runs into z-index issues. Use floats instead:
+https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black_right
+*/
+
+#topOuter {
+
+}
+
+#topOuter:after {
+      content:"";
+      display: block;
+      clear: both;
+}
   
-  #topInner1 {
+  #top1 {
     border: 0px solid red;
-    position: absolute;
+    float: left;
+    margin: 15px 7px 0 0;
   }
-  
-  #topOuter2 {
-    border: 0px solid green;
-  width: 100%;
+
+  #top1 a {
+      padding-left: 15px;
   }
+
   
-  #topInner2 {
+
+  
+  #top2 {
     border: 0px solid pink;
-    position: relative;
-    text-align: right;
+    float: right;
+    margin: 15px 0 0 0;
+}
+
+
+  #top2 a {
+      padding-left: 15px;
   }
+
+#top2 img {
+    opacity:1;
+}
   
+
+.signIn {
+    background-color: rgb(66,133,244);
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #f2f2f2;
+    border-radius: 3px;
+    margin-left: 8px;
+    padding: 0 10px;
+    height: 32px;
+}
+
 
 
 /***Google logo*/
 img.center{
     display:block;
+    margin-top: 100px;
 }
 
 
@@ -124,7 +161,7 @@ img.center{
 
 
 /*Google Search and I'm Feeling Lucky buttons*/
-button {
+.button {
     background-color: #f2f2f2;
     border: 1px solid #f2f2f2;
     border-radius: 4px;
