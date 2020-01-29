@@ -1,4 +1,5 @@
 /*63 Opacity inheritence*/
+/*190 sticky to the bottom*/
 
 body {
         font-family: arial,sans-serif;
@@ -100,6 +101,8 @@ img.center{
     width: 500px;
     /*text-align: center;*/
     width: 50%;
+    max-width: 582px;
+    min-width: 330px;
     padding: 10px 10px;
     border: 1px solid lightgray;
     border-radius: 20px;
@@ -184,3 +187,52 @@ cursor: pointer;
 }
 
 
+
+/****Bottom bars*/
+
+.bottomBar {
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    font-size: 16px;
+    color: rgba(0,0,0,0.54);
+    padding: 16px 0 0 0;
+    line-height: 10px;
+    height: 30px;
+}
+
+
+.bottomBar a {
+    font-size: small;
+    color: #333;
+}
+
+#country {
+    position: fixed;
+    bottom: 47px;
+    left: 0;
+    width: 100%;
+    padding-left:20px;
+}
+
+
+#lowest {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+#bottomLeft {
+    float: left;
+    }
+#bottomLeft a {
+    padding-left: 20px;
+}
+
+#bottomRight {
+    float: right;
+}
+#bottomRight a {
+    padding-right: 20px;
+}
