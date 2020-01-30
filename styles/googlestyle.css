@@ -1,5 +1,4 @@
-/*63 Opacity inheritence*/
-/*190 sticky to the bottom*/
+/*Line 58 Opacity inheritence*/
 
 body {
         font-family: arial,sans-serif;
@@ -8,7 +7,6 @@ body {
 }
 
 .center {
-    /*display: block;*/
     margin-left: auto;
     margin-right: auto;
 }
@@ -24,13 +22,7 @@ a:hover {
 }
 
 /***Top bar*/
-/*** ******This is broken, trying to do it the google way with different 0-height divs one left one right runs into z-index issues. Use floats instead:
-https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black_right
-*/
 
-#topOuter {
-
-}
 
 #topOuter:after {
       content:"";
@@ -83,7 +75,7 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black_
 /***Google logo*/
 img.center{
     display:block;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 
@@ -92,15 +84,13 @@ img.center{
 .search {
        text-align: center;
        width: 200px;
-       /* border: 1px solid red; */
        }
 
 
 /***The div*/
 #searchWhole2 {
     width: 500px;
-    /*text-align: center;*/
-    width: 50%;
+       width: 50%;
     max-width: 582px;
     min-width: 330px;
     padding: 10px 10px;
@@ -147,7 +137,6 @@ img.center{
 .search2 input {
     border: none;
     font-size: 16px;
-    /*width: 320px;*/
     width: 85%;
 }
 
@@ -156,11 +145,6 @@ img.center{
 .search2 input:focus {
     outline: none;
 }
-
-
-/*
-----
-*/
 
 
 /*Google Search and I'm Feeling Lucky buttons*/
